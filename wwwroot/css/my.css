@@ -216,7 +216,12 @@
         margin-left: 30%;
     }
     .cimg3{
-        margin-left: 38%;
+        margin-left: 36%;
+    }
+    @media (max-width: 1000px) {
+        .cimg3{
+            margin-left: 39%;
+        }
     }
 .inline{
     display: inline-block;
