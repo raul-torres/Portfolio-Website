@@ -392,13 +392,14 @@
         <br>
         <br>
         <br>
-         <div class="row">
+        <div class="row">
           <div class="col-md-4">
             <h3>Seraj Associates</h3>
             <h6>Technologies:</h6>
             <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
             <br>
             <p><span class="text-golden">Custom</span> portfolio website created for architect client to display his projects. This website has a built-in <span class="text-golden">administrator</span> section where they can add/update projects to their website. This application features a single use <span class="text-golden">login/registration</span> for the <span class="text-golden">administrator</span>, <span class="text-golden">one-to-many</span> schema relationship, <span class="text-golden">BCrypt</span> password hashing, and <span class="text-golden">image upload</span> for their project section.</p>
+            <br>
             <a href="https://github.com/raul-torres/Seraj-Asssociates" class="form-control btn btn-outline-primary thisbtn thisbtn-goldenrod" target="_blank">View Project Code</a>
             <br>
             <br>
@@ -424,6 +425,59 @@
                 function showDivs4(n) {
                   var i;
                   var x = document.getElementsByClassName("mySlides5");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+         <div class="row">
+          <div class="col-md-4">
+            <h3>Job Assistant</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <br>
+            
+            <p>
+              Oftentimes the stress of applying to jobs and keeping <span class="text-green">track of each job's</span> status can be overwhelming. I took it upon myself to create a way to destress and simplify the process by creating a website that does all the <span class="text-green">tracking for you</span>. With the use of <span class="text-green">one to many relationships, password BCrypt hashing and session</span>; it allows the user set a <span class="text-green">goal</span> of how many jobs to apply to and an easy to use interface where they can <span class="text-green">edit their job status</span>  through their job hunt. 
+            </p>
+            <a href="http://18.191.100.220/" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Live Demo</a>
+            <p></p>
+            <a href="https://github.com/raul-torres/Job-Assistant" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/JA1.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA2.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA3.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA4.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA5.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA6.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
+
+              <button class="w3-button w3-black w3-display-left arrow5" onclick="plusDivs5(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow5" onclick="plusDivs5(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs5(slideIndex);
+
+                function plusDivs5(n) {
+                  showDivs5(slideIndex += n);
+                }
+
+                function showDivs5(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides6");
                   if (n > x.length) {slideIndex = 1}
                   if (n < 1) {slideIndex = x.length}
                   for (i = 0; i < x.length; i++) {

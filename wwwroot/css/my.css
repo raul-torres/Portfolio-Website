@@ -112,6 +112,9 @@
     .project-image1{
         border: 2px solid gray;
     }
+    .project-image5{
+        border: 2px solid green;
+    }
 .empahsis{
     color: rgb(61, 160, 52);
     font-weight: 500;
@@ -132,9 +135,14 @@
         color: goldenrod;
         font-weight: 500;
     }
+    .text-green{
+        color: green;
+        font-weight: 500;
+    }
 .thisbtn{
     border: 1px solid black;
     color: black;
+    transition: 0.5s;
 }
     .thisbtn1:hover{
         background-color: rgba(168, 168, 172, 0.178);
@@ -165,6 +173,11 @@
         background-color: rgba(168, 168, 172, 0.178);
         border: 2px solid gray;
         color: gray;
+    }
+    .thisbtn-green:hover{
+        background-color: rgba(168, 168, 172, 0.178);
+        border: 2px solid green;
+        color: green;
     }
 .w3-button{
     border:none;
