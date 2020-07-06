@@ -91,10 +91,13 @@
     width: 100%;
     height: auto;
     border: 2px solid rgb(61, 160, 52);
-    transition: 0.3s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
-    .project-image:hover{
-        box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+        .project-image:hover{
+            box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+        }
+    .w3-display-right{
+        transition: 0.8s ease-in-out;
     }
     .project-image2
     {
@@ -114,6 +117,9 @@
     }
     .project-image5{
         border: 2px solid green;
+    }
+    .project-image6{
+        border: 2px solid lightblue;
     }
 .empahsis{
     color: rgb(61, 160, 52);
@@ -137,6 +143,10 @@
     }
     .text-green{
         color: green;
+        font-weight: 500;
+    }
+    .text-lightblue{
+        color: rgb(136, 172, 184);
         font-weight: 500;
     }
 .thisbtn{
@@ -179,6 +189,11 @@
         border: 2px solid green;
         color: green;
     }
+    .thisbtn-lightblue:hover{
+        background-color: rgba(168, 168, 172, 0.178);
+        border: 2px solid lightblue;
+        color: lightblue;   
+    }
 .w3-button{
     border:none;
     display:inline-block;
@@ -214,6 +229,12 @@
     .arrow1:hover{
         color: gray !important;
     }
+    .arrow6:hover{
+        color: green !important;
+    }
+    .arrow7:hover{
+        color: lightblue !important;
+    }
 .connect{
     text-align: center;
     font-size: x-large;
@@ -224,7 +245,11 @@
     height: auto;
     display: block;
     margin-bottom: 2%;
+    transition: 0.8s;
 }
+    .connect-img:hover{
+        width: 100px;
+    }
     .cimg2{
         margin-left: 30%;
     }
@@ -243,3 +268,8 @@
     background-color: darkgray;
     width: 100%;
 }
+
+
+
+
+

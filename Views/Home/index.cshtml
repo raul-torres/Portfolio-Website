@@ -63,14 +63,14 @@
         <br>
         <br>
 
-        <p class="lead mb-5">Full-stack developer able to incorporate front-end design, back-end logic, and a database storage to create responsive web applications. Capable problem-solver, eager to tackle complex issues and expand professional knowledge. Currently in the market to work with an innovative team and produce results.</p>
+        <p class="lead mb-5 ">Full-stack developer able to incorporate front-end design, back-end logic, and a database storage to create responsive web applications. Capable problem-solver, eager to tackle complex issues and expand professional knowledge. Currently in the market to work with an innovative team and produce results.</p>
         <br>
         <br>
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-3 text-center">
             <p class="inline">
-              <a href="https://drive.google.com/file/d/1RAWPGhrRSNPoo49hRfJLTsOl2Jc1jSBv/view" target="_blank">
+              <a href="https://drive.google.com/file/d/1RAWPGhrRSNPoo49hRfJLTsOl2Jc1jSBv/view?usp=sharing" target="_blank">
               <img src="../img/resume.png" alt="Resume Icon" class="connect-img">
               Resume</a>
             </p>
@@ -208,35 +208,234 @@
         <br>
         <div class="row">
           <div class="col-md-4">
-            <h3>TRAVEL BUDDY / HANGOUT!</h3>
+            <h3>Favorite Places!</h3>
             <h6>Technologies:</h6>
-            <p>Python - Django MVC - SQLite</p>
+            <p>Google Maps API - JavaScript - C# - ASP.NET Core</p>
             <br>
-            <p>Travel planner built using Python where you can create travel plans with your friends! This application features login and registration with <span class="purp-emphasis">validations</span>, <span class="purp-emphasis">one-to-many</span> and <span class="purp-emphasis">many-to-many</span> schema relationships, <span class="purp-emphasis">BCrypt</span> password hashing, and <span class="purp-emphasis">session</span> to keep track of the user that is logged in.</p>
-            <a href="https://github.com/raul-torres/hangout" class="form-control btn btn-outline-primary thisbtn thisbtn-gray" target="_blank">View Project Code</a>
+            
+            <p>
+                With the use of the <span class="text-lightblue">Google Maps JavaScript API</span>, you can see some cool spots around DC, Maryland, and Virginia. Created this application with various <span class="text-lightblue">Google Map markers</span> that run <span class="text-lightblue">functions</span> to perform tasks such as <span class="text-lightblue">marker bounce animation</span> , <span class="text-lightblue">recentering the map around a marker</span>, and a <span class="text-lightblue">smooth zoom on click</span>. Utilizes <span class="text-lightblue">C#/ASP.NET</span> to control backend routes.  Currently deployed using <span class="text-lightblue">AWS EC2</span> (using Ubuntu 18.04).
+            </p>
+            <a href="http://18.216.29.117/" class="form-control btn btn-outline-primary thisbtn thisbtn-lightblue" target="_blank">Live Demo</a>
+            <p></p>
+            <a href="https://github.com/raul-torres/FavPlaces" class="form-control btn btn-outline-primary thisbtn thisbtn-lightblue" target="_blank">Project Code</a>
             <br>
             <br>
           </div>
           <div class="col-md-8">
             <div class="w3-content w3-display-container">
-              <img src="~/img/TB1.PNG" alt="Pet Shelter Project" class="mySlides mySlides1 project-image project-image1">
-              <img src="~/img/TB2.PNG" alt="Pet Shelter Project" class="mySlides mySlides1 project-image project-image1">
-              <img src="~/img/TB3.PNG" alt="Pet Shelter Project" class="mySlides mySlides1 project-image project-image1">
-              <img src="~/img/TB4.PNG" alt="Pet Shelter Project" class="mySlides mySlides1 project-image project-image1">
+              <img src="~/img/FP1.PNG" alt="Project Screenshots" class="mySlides mySlides7 project-image6 project-image">
+              <img src="~/img/FP2.PNG" alt="Project Screenshots" class="mySlides mySlides7 project-image6 project-image">
+              <img src="~/img/FP3.PNG" alt="Project Screenshots" class="mySlides mySlides7 project-image6 project-image">
+              <img src="~/img/FP4.PNG" alt="Project Screenshots" class="mySlides mySlides7 project-image6 project-image">
 
-              <button class="w3-button w3-black w3-display-left arrow1" onclick="plusDivs0(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right arrow1" onclick="plusDivs0(1)">&#10095;</button>
+              <button class="w3-button w3-black w3-display-left arrow7" onclick="plusDivs6(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow7" onclick="plusDivs6(1)">&#10095;</button>
               <script>
                 var slideIndex = 1;
-                showDivs0(slideIndex);
+                showDivs6(slideIndex);
 
-                function plusDivs0(n) {
-                  showDivs0(slideIndex += n);
+                function plusDivs6(n) {
+                  showDivs6(slideIndex += n);
                 }
 
-                function showDivs0(n) {
+                function showDivs6(n) {
                   var i;
-                  var x = document.getElementsByClassName("mySlides1");
+                  var x = document.getElementsByClassName("mySlides7");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Job Assistant</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <br>
+            
+            <p>
+              Oftentimes the stress of applying to jobs and keeping <span class="text-green">track of each job's</span> status can be overwhelming. I took it upon myself to create a way to destress and simplify the process by creating a website that does all the <span class="text-green">tracking for you</span>. With the use of <span class="text-green">one to many relationships, password BCrypt hashing and session</span>; it allows the user set a <span class="text-green">goal</span> of how many jobs to apply to and an easy to use interface where they can <span class="text-green">edit their job status</span>  through their job hunt. 
+            </p>
+            <a href="http://18.191.100.220/" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Live Demo</a>
+            <p></p>
+            <a href="https://github.com/raul-torres/Job-Assistant" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/JA1.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA2.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA3.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA4.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA5.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+              <img src="~/img/JA6.PNG" alt="Project Screenshots" class="mySlides mySlides6 project-image5 project-image">
+
+              <button class="w3-button w3-black w3-display-left arrow6" onclick="plusDivs5(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow6" onclick="plusDivs5(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs5(slideIndex);
+
+                function plusDivs5(n) {
+                  showDivs5(slideIndex += n);
+                }
+
+                function showDivs5(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides6");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Seraj Associates</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <br>
+            <p><span class="text-golden">Custom</span> portfolio website created for architect client to display his projects. This website has a built-in <span class="text-golden">administrator</span> section where they can add/update projects to their website. This application features a single use <span class="text-golden">login/registration</span> for the <span class="text-golden">administrator</span>, <span class="text-golden">one-to-many</span> schema relationship, <span class="text-golden">BCrypt</span> password hashing, and <span class="text-golden">image upload</span> for their project section.</p>
+            <br>
+            <a href="https://github.com/raul-torres/Seraj-Asssociates" class="form-control btn btn-outline-primary thisbtn thisbtn-goldenrod" target="_blank">View Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/SA1.PNG" alt="Project Screenshots" class="mySlides mySlides5 project-image4 project-image">
+              <img src="~/img/SA2.PNG" alt="Project Screenshots" class="mySlides mySlides5 project-image4 project-image">
+              <img src="~/img/SA3.PNG" alt="Project Screenshots" class="mySlides mySlides5 project-image4 project-image">
+              <img src="~/img/SA4.PNG" alt="Project Screenshots" class="mySlides mySlides5 project-image4 project-image">
+              <img src="~/img/SA5.PNG" alt="Project Screenshots" class="mySlides mySlides5 project-image4 project-image">
+
+              <button class="w3-button w3-black w3-display-left arrow5" onclick="plusDivs4(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow5" onclick="plusDivs4(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs4(slideIndex);
+
+                function plusDivs4(n) {
+                  showDivs4(slideIndex += n);
+                }
+
+                function showDivs4(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides5");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Flash Cards</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <br>
+            <p>Flashcard application where you can create, and quiz yourself with different cards. You can also interact with other user created cards and quiz yourself with them. This full-stack application uses <span class="brown-emphasis">one-to-many</span> schema relationship, login/registration with <span class="brown-emphasis">validations</span>, <span class="brown-emphasis">BCrypt</span> password hashing, and <span class="brown-emphasis">session</span> to keep you logged in.</p>
+            <br>
+            <a href="https://github.com/raul-torres/Flash-Cards-" class="form-control btn btn-outline-primary thisbtn thisbtn-brown" target="_blank">View Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/FC1.PNG" alt="Project Screenshots" class="mySlides mySlides4 project-image project-image-brown">
+              <img src="~/img/FC2.PNG" alt="Project Screenshots" class="mySlides mySlides4 project-image project-image-brown">
+              <img src="~/img/FC3.PNG" alt="Project Screenshots" class="mySlides mySlides4 project-image project-image-brown">
+
+              <button class="w3-button w3-black w3-display-left arrow4" onclick="plusDivs3(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow4" onclick="plusDivs3(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs3(slideIndex);
+
+                function plusDivs3(n) {
+                  showDivs3(slideIndex += n);
+                }
+
+                function showDivs3(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides4");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>DOJO ACTIVITY CENTER</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <br>
+            <p>Activity planner where you can create and join other user-generated events. This full-stack web application uses a <span class="blue-emphasis">many-to-many</span> as well as a <span class="blue-emphasis">one-to-many</span> schema relationship, login and registration with <span class="blue-emphasis">validation</span>, <span class="blue-emphasis">session</span> to ensure the user remains logged in, and <span class="blue-emphasis">BCrypt</span> password hashing.</p>
+            <a href="https://github.com/raul-torres/BlackBelt" class="form-control btn btn-outline-primary thisbtn thisbtn2" target="_blank">View Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/DAC2.PNG" alt="Project Screenshots" class="mySlides mySlides3 project-image2 project-image">
+              <img src="~/img/activityCenter.PNG" alt="Project Screenshots" class="mySlides mySlides3 project-image2 project-image">
+              <img src="~/img/DAC3.PNG" alt="Project Screenshots" class="mySlides mySlides3 project-image2 project-image">
+              <img src="~/img/DAC4.PNG" alt="Project Screenshots" class="mySlides mySlides3 project-image2 project-image">
+
+              <button class="w3-button w3-black w3-display-left arrow3" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow3" onclick="plusDivs(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides3");
                   if (n > x.length) {slideIndex = 1}
                   if (n < 1) {slideIndex = x.length}
                   for (i = 0; i < x.length; i++) {
@@ -266,10 +465,10 @@
           </div>
           <div class="col-md-8">
             <div class="w3-content w3-display-container">
-              <img src="~/img/petshelter.PNG" alt="Pet Shelter Project" class="mySlides mySlides2 project-image">
-              <img src="~/img/PS2.PNG" alt="Pet Shelter Project" class="mySlides mySlides2 project-image">
-              <img src="~/img/PS3.PNG" alt="Pet Shelter Project" class="mySlides mySlides2 project-image">
-              <img src="~/img/PS4.PNG" alt="Pet Shelter Project" class="mySlides mySlides2 project-image">
+              <img src="~/img/petshelter.PNG" alt="Project Screenshots" class="mySlides mySlides2 project-image">
+              <img src="~/img/PS2.PNG" alt="Project Screenshots" class="mySlides mySlides2 project-image">
+              <img src="~/img/PS3.PNG" alt="Project Screenshots" class="mySlides mySlides2 project-image">
+              <img src="~/img/PS4.PNG" alt="Project Screenshots" class="mySlides mySlides2 project-image">
 
 
               <button class="w3-button w3-black w3-display-left arrow2" onclick="plusDivs2(-1)">&#10094;</button>
@@ -302,35 +501,35 @@
         <br>
         <div class="row">
           <div class="col-md-4">
-            <h3>DOJO ACTIVITY CENTER</h3>
+            <h3>TRAVEL BUDDY / HANGOUT!</h3>
             <h6>Technologies:</h6>
-            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
+            <p>Python - Django MVC - SQLite</p>
             <br>
-            <p>Activity planner where you can create and join other user-generated events. This full-stack web application uses a <span class="blue-emphasis">many-to-many</span> as well as a <span class="blue-emphasis">one-to-many</span> schema relationship, login and registration with <span class="blue-emphasis">validation</span>, <span class="blue-emphasis">session</span> to ensure the user remains logged in, and <span class="blue-emphasis">BCrypt</span> password hashing.</p>
-            <a href="https://github.com/raul-torres/BlackBelt" class="form-control btn btn-outline-primary thisbtn thisbtn2" target="_blank">View Project Code</a>
+            <p>Travel planner built using Python where you can create travel plans with your friends! This application features login and registration with <span class="purp-emphasis">validations</span>, <span class="purp-emphasis">one-to-many</span> and <span class="purp-emphasis">many-to-many</span> schema relationships, <span class="purp-emphasis">BCrypt</span> password hashing, and <span class="purp-emphasis">session</span> to keep track of the user that is logged in.</p>
+            <a href="https://github.com/raul-torres/hangout" class="form-control btn btn-outline-primary thisbtn thisbtn-gray" target="_blank">View Project Code</a>
             <br>
             <br>
           </div>
           <div class="col-md-8">
             <div class="w3-content w3-display-container">
-              <img src="~/img/DAC2.PNG" alt="Activity Center Project" class="mySlides mySlides3 project-image2 project-image">
-              <img src="~/img/activityCenter.PNG" alt="Activity Center Project" class="mySlides mySlides3 project-image2 project-image">
-              <img src="~/img/DAC3.PNG" alt="Activity Center Project" class="mySlides mySlides3 project-image2 project-image">
-              <img src="~/img/DAC4.PNG" alt="Activity Center Project" class="mySlides mySlides3 project-image2 project-image">
+              <img src="~/img/TB1.PNG" alt="Project Screenshots" class="mySlides mySlides1 project-image project-image1">
+              <img src="~/img/TB2.PNG" alt="Project Screenshots" class="mySlides mySlides1 project-image project-image1">
+              <img src="~/img/TB3.PNG" alt="Project Screenshots" class="mySlides mySlides1 project-image project-image1">
+              <img src="~/img/TB4.PNG" alt="Project Screenshots" class="mySlides mySlides1 project-image project-image1">
 
-              <button class="w3-button w3-black w3-display-left arrow3" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right arrow3" onclick="plusDivs(1)">&#10095;</button>
+              <button class="w3-button w3-black w3-display-left arrow1" onclick="plusDivs0(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow1" onclick="plusDivs0(1)">&#10095;</button>
               <script>
                 var slideIndex = 1;
-                showDivs(slideIndex);
+                showDivs0(slideIndex);
 
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
+                function plusDivs0(n) {
+                  showDivs0(slideIndex += n);
                 }
 
-                function showDivs(n) {
+                function showDivs0(n) {
                   var i;
-                  var x = document.getElementsByClassName("mySlides3");
+                  var x = document.getElementsByClassName("mySlides1");
                   if (n > x.length) {slideIndex = 1}
                   if (n < 1) {slideIndex = x.length}
                   for (i = 0; i < x.length; i++) {
@@ -342,151 +541,6 @@
             </div>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Flash Cards</h3>
-            <h6>Technologies:</h6>
-            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
-            <br>
-            <p>Flashcard application where you can create, and quiz yourself with different cards. You can also interact with other user created cards and quiz yourself with them. This full-stack application uses <span class="brown-emphasis">one-to-many</span> schema relationship, login/registration with <span class="brown-emphasis">validations</span>, <span class="brown-emphasis">BCrypt</span> password hashing, and <span class="brown-emphasis">session</span> to keep you logged in.</p>
-            <br>
-            <a href="https://github.com/raul-torres/Flash-Cards-" class="form-control btn btn-outline-primary thisbtn thisbtn-brown" target="_blank">View Project Code</a>
-            <br>
-            <br>
-          </div>
-          <div class="col-md-8">
-            <div class="w3-content w3-display-container">
-              <img src="~/img/FC1.PNG" alt="Pet Shelter Project" class="mySlides mySlides4 project-image project-image-brown">
-              <img src="~/img/FC2.PNG" alt="Pet Shelter Project" class="mySlides mySlides4 project-image project-image-brown">
-              <img src="~/img/FC3.PNG" alt="Pet Shelter Project" class="mySlides mySlides4 project-image project-image-brown">
-
-              <button class="w3-button w3-black w3-display-left arrow4" onclick="plusDivs3(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right arrow4" onclick="plusDivs3(1)">&#10095;</button>
-              <script>
-                var slideIndex = 1;
-                showDivs3(slideIndex);
-
-                function plusDivs3(n) {
-                  showDivs3(slideIndex += n);
-                }
-
-                function showDivs3(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides4");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex-1].style.display = "block";  
-                }
-              </script>
-            </div>
-          </div>
-          </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Seraj Associates</h3>
-            <h6>Technologies:</h6>
-            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
-            <br>
-            <p><span class="text-golden">Custom</span> portfolio website created for architect client to display his projects. This website has a built-in <span class="text-golden">administrator</span> section where they can add/update projects to their website. This application features a single use <span class="text-golden">login/registration</span> for the <span class="text-golden">administrator</span>, <span class="text-golden">one-to-many</span> schema relationship, <span class="text-golden">BCrypt</span> password hashing, and <span class="text-golden">image upload</span> for their project section.</p>
-            <br>
-            <a href="https://github.com/raul-torres/Seraj-Asssociates" class="form-control btn btn-outline-primary thisbtn thisbtn-goldenrod" target="_blank">View Project Code</a>
-            <br>
-            <br>
-          </div>
-          <div class="col-md-8">
-            <div class="w3-content w3-display-container">
-              <img src="~/img/SA1.PNG" alt="Activity Center Project" class="mySlides mySlides5 project-image4 project-image">
-              <img src="~/img/SA2.PNG" alt="Activity Center Project" class="mySlides mySlides5 project-image4 project-image">
-              <img src="~/img/SA3.PNG" alt="Activity Center Project" class="mySlides mySlides5 project-image4 project-image">
-              <img src="~/img/SA4.PNG" alt="Activity Center Project" class="mySlides mySlides5 project-image4 project-image">
-              <img src="~/img/SA5.PNG" alt="Activity Center Project" class="mySlides mySlides5 project-image4 project-image">
-
-              <button class="w3-button w3-black w3-display-left arrow5" onclick="plusDivs4(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right arrow5" onclick="plusDivs4(1)">&#10095;</button>
-              <script>
-                var slideIndex = 1;
-                showDivs4(slideIndex);
-
-                function plusDivs4(n) {
-                  showDivs4(slideIndex += n);
-                }
-
-                function showDivs4(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides5");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex-1].style.display = "block";  
-                }
-              </script>
-            </div>
-          </div>
-          </div>
-        <br>
-        <br>
-        <br>
-        <br>
-         <div class="row">
-          <div class="col-md-4">
-            <h3>Job Assistant</h3>
-            <h6>Technologies:</h6>
-            <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
-            <br>
-            
-            <p>
-              Oftentimes the stress of applying to jobs and keeping <span class="text-green">track of each job's</span> status can be overwhelming. I took it upon myself to create a way to destress and simplify the process by creating a website that does all the <span class="text-green">tracking for you</span>. With the use of <span class="text-green">one to many relationships, password BCrypt hashing and session</span>; it allows the user set a <span class="text-green">goal</span> of how many jobs to apply to and an easy to use interface where they can <span class="text-green">edit their job status</span>  through their job hunt. 
-            </p>
-            <a href="http://18.191.100.220/" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Live Demo</a>
-            <p></p>
-            <a href="https://github.com/raul-torres/Job-Assistant" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Project Code</a>
-            <br>
-            <br>
-          </div>
-          <div class="col-md-8">
-            <div class="w3-content w3-display-container">
-              <img src="~/img/JA1.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-              <img src="~/img/JA2.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-              <img src="~/img/JA3.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-              <img src="~/img/JA4.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-              <img src="~/img/JA5.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-              <img src="~/img/JA6.PNG" alt="Activity Center Project" class="mySlides mySlides6 project-image5 project-image">
-
-              <button class="w3-button w3-black w3-display-left arrow5" onclick="plusDivs5(-1)">&#10094;</button>
-              <button class="w3-button w3-black w3-display-right arrow5" onclick="plusDivs5(1)">&#10095;</button>
-              <script>
-                var slideIndex = 1;
-                showDivs5(slideIndex);
-
-                function plusDivs5(n) {
-                  showDivs5(slideIndex += n);
-                }
-
-                function showDivs5(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides6");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  x[slideIndex-1].style.display = "block";  
-                }
-              </script>
-            </div>
         <br>
         <br>
         <br>
