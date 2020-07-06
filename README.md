@@ -69,6 +69,5 @@ SOFTWARE.
 
 - Website - [Portfolio Website](www.rauldev.com)
 - LinkedIn - [Professional LinkedIn](https://www.linkedin.com/in/raul%E2%80%94torres/)
-- Email - [Personal Email](raul.torres.dev@gmail.com)
 
 [Back To The Top](#My-Portfolio-Website)
