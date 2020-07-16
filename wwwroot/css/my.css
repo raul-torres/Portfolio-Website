@@ -121,6 +121,9 @@
     .project-image6{
         border: 2px solid lightblue;
     }
+    .project-image7{
+        border: 2px solid rgb(238, 94, 94);
+    }
 .empahsis{
     color: rgb(61, 160, 52);
     font-weight: 500;
@@ -147,6 +150,10 @@
     }
     .text-lightblue{
         color: rgb(136, 172, 184);
+        font-weight: 500;
+    }
+    .text-coral{
+        color: rgb(238, 94, 94);
         font-weight: 500;
     }
 .thisbtn{
@@ -194,6 +201,11 @@
         border: 2px solid lightblue;
         color: lightblue;   
     }
+    .thisbtn-coral:hover{
+        background-color: rgba(168, 168, 172, 0.178);
+        border: 2px solid rgb(238, 94, 94);
+        color: rgb(238, 94, 94);
+    }
 .w3-button{
     border:none;
     display:inline-block;
@@ -234,6 +246,9 @@
     }
     .arrow7:hover{
         color: lightblue !important;
+    }
+    .arrow8:hover{
+        color: rgb(238, 94, 94) !important;
     }
 .connect{
     text-align: center;

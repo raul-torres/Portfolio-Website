@@ -70,7 +70,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-3 text-center">
             <p class="inline">
-              <a href="https://drive.google.com/file/d/1RAWPGhrRSNPoo49hRfJLTsOl2Jc1jSBv/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1EGraUXamrtvkvJFbQMG4ArdR5Y5tZbzQ/view?usp=sharing" target="_blank">
               <img src="../img/resume.png" alt="Resume Icon" class="connect-img">
               Resume</a>
             </p>
@@ -208,14 +208,72 @@
         <br>
         <div class="row">
           <div class="col-md-4">
+            <h3>The Book Club</h3>
+            <h6>Technologies:</h6>
+            <p>C# - ASP.NET Core - Entity Framework - MySQL</p>
+            <br>
+            
+            <p>• Built custom website for book club using <span class="text-coral">C#/ASP.NET, Entity Framework</span>, and <span class="text-coral">MySQL</span> so they can share and like books they want to read</p>
+            <p>• Created <span class="text-coral">master administrator</span> that can <span class="text-coral">share admin access</span> with other users with the help of <span class="text-coral">Entity Framework</span></p>
+            <p>• User <span class="text-coral">accounts remain lock</span> until an <span class="text-coral">admin approves</span> the user to join the website</p>
+            <p>• <span class="text-coral">MySQL</span> stores logs of actions performed by other users such as when new accounts are created, new books are recommended or deleted, an admin accepts a new user into the website, or if admin freezes/deletes another user's account so admins can have <span class="text-coral">written records of major actions</span></p>
+
+            <a href="https://github.com/raul-torres/BookClub" class="form-control btn btn-outline-primary thisbtn thisbtn-coral" target="_blank">Project Code</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-md-8">
+            <div class="w3-content w3-display-container">
+              <img src="~/img/BC0.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+              <img src="~/img/BC3.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+              <img src="~/img/BC4.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+              <img src="~/img/BC5.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+              <img src="~/img/BC1.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+              <img src="~/img/BC2.PNG" alt="Project Screenshots" class="mySlides mySlides8 project-image7 project-image">
+
+
+              <button class="w3-button w3-black w3-display-left arrow8" onclick="plusDivs7(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right arrow8" onclick="plusDivs7(1)">&#10095;</button>
+              <script>
+                var slideIndex = 1;
+                showDivs7(slideIndex);
+
+                function plusDivs7(n) {
+                  showDivs7(slideIndex += n);
+                }
+
+                function showDivs7(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides8");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
             <h3>Favorite Places!</h3>
             <h6>Technologies:</h6>
             <p>Google Maps API - JavaScript - C# - ASP.NET Core</p>
             <br>
             
-            <p>
+            @* <p>
                 With the use of the <span class="text-lightblue">Google Maps JavaScript API</span>, you can see some cool spots around DC, Maryland, and Virginia. Created this application with various <span class="text-lightblue">Google Map markers</span> that run <span class="text-lightblue">functions</span> to perform tasks such as <span class="text-lightblue">marker bounce animation</span> , <span class="text-lightblue">recentering the map around a marker</span>, and a <span class="text-lightblue">smooth zoom on click</span>. Utilizes <span class="text-lightblue">C#/ASP.NET</span> to control backend routes.  Currently deployed using <span class="text-lightblue">AWS EC2</span> (using Ubuntu 18.04).
-            </p>
+            </p> *@
+            <p>• Utilized the <span class="text-lightblue">Google Maps JavaScript API</span> to share my favorite locations around DC and gain a solid understanding of <span class="text-lightblue">Google Developer Services</span></p>
+            <p>• Created with various <span class="text-lightblue">Map markers</span> that run functions to perform tasks such as <span class="text-lightblue">marker bounce animations</span>, <span class="text-lightblue">re-centering of the map</span> around a marker, and a <span class="text-lightblue">smooth zoom</span>  occurring on-click</p>
+            <p>• Controlled backend using <span class="text-lightblue">C#/ASP.NET </span>to display different pages to the user</p>
+            <p>• Deployed project using <span class="text-lightblue">AWS EC2</span> (Using Ubuntu 18.04 with NGINX) to showcase a live demo</p>
             <a href="http://18.216.29.117/" class="form-control btn btn-outline-primary thisbtn thisbtn-lightblue" target="_blank">Live Demo</a>
             <p></p>
             <a href="https://github.com/raul-torres/FavPlaces" class="form-control btn btn-outline-primary thisbtn thisbtn-lightblue" target="_blank">Project Code</a>
@@ -264,9 +322,14 @@
             <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
             <br>
             
-            <p>
+            @* <p>
               Oftentimes the stress of applying to jobs and keeping <span class="text-green">track of each job's</span> status can be overwhelming. I took it upon myself to create a way to destress and simplify the process by creating a website that does all the <span class="text-green">tracking for you</span>. With the use of <span class="text-green">one to many relationships, password BCrypt hashing and session</span>; it allows the user set a <span class="text-green">goal</span> of how many jobs to apply to and an easy to use interface where they can <span class="text-green">edit their job status</span>  through their job hunt. 
-            </p>
+            </p> *@
+            <p>• Used <span class="text-green">C#/ASP.NET, MySQL, and Entity Framework</span> to build a website for job application tracking as well as application statuses</p>
+            <p>• Utilizes <span class="text-green">one-to-many relationships, password BCrypt hashing,</span> and <span class="text-green">session</span> in order to create accounts and keep users logged in</p>
+            <p>• Created a <span class="text-green">Goals Model class</span> through <span class="text-green">Entity Framework</span> so users can set goals on how many jobs they want to apply to</p>
+            <p>• Deployed using <span class="text-green">AWS EC2</span> (using Ubuntu 18.04 with NGINX) to showcase a live demo</p>
+
             <a href="http://18.191.100.220/" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Live Demo</a>
             <p></p>
             <a href="https://github.com/raul-torres/Job-Assistant" class="form-control btn btn-outline-primary thisbtn thisbtn-green" target="_blank">Project Code</a>
@@ -317,8 +380,12 @@
             <h6>Technologies:</h6>
             <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
             <br>
-            <p><span class="text-golden">Custom</span> portfolio website created for architect client to display his projects. This website has a built-in <span class="text-golden">administrator</span> section where they can add/update projects to their website. This application features a single use <span class="text-golden">login/registration</span> for the <span class="text-golden">administrator</span>, <span class="text-golden">one-to-many</span> schema relationship, <span class="text-golden">BCrypt</span> password hashing, and <span class="text-golden">image upload</span> for their project section.</p>
-            <br>
+            @* <p><span class="text-golden">Custom</span> portfolio website created for architect client to display his projects. This website has a built-in <span class="text-golden">administrator</span> section where they can add/update projects to their website. This application features a single use <span class="text-golden">login/registration</span> for the <span class="text-golden">administrator</span>, <span class="text-golden">one-to-many</span> schema relationship, <span class="text-golden">BCrypt</span> password hashing, and <span class="text-golden">image upload</span> for their project section.</p> *@
+            <p>• Used <span class="text-golden">C#/ASP.NET, MySQL</span>, and <span class="text-golden">Entity Framework</span> to build a personal portfolio for an Architect</p>
+            <p>• Built an <span class="text-golden">administrator access</span> section so the client can add/make updates to projects on their portfolio</p>
+            <p>• Features a <span class="text-golden"> single-use login/registration</span> for the administrator, <span class="text-golden">one-to-many schema relationship, BCrypt password hashing</span>, and <span class="text-golden">image upload</span> (image saved in static files folder while image route saved to SQL Database)</p>
+
+
             <a href="https://github.com/raul-torres/Seraj-Asssociates" class="form-control btn btn-outline-primary thisbtn thisbtn-goldenrod" target="_blank">View Project Code</a>
             <br>
             <br>
@@ -365,9 +432,15 @@
             <h6>Technologies:</h6>
             <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
             <br>
-            <p>Flashcard application where you can create, and quiz yourself with different cards. You can also interact with other user created cards and quiz yourself with them. This full-stack application uses <span class="brown-emphasis">one-to-many</span> schema relationship, login/registration with <span class="brown-emphasis">validations</span>, <span class="brown-emphasis">BCrypt</span> password hashing, and <span class="brown-emphasis">session</span> to keep you logged in.</p>
+            @* <p>Flashcard application where you can create, and quiz yourself with different cards. You can also interact with other user created cards and quiz yourself with them. This full-stack application uses <span class="brown-emphasis">one-to-many</span> schema relationship, login/registration with <span class="brown-emphasis">validations</span>, <span class="brown-emphasis">BCrypt</span> password hashing, and <span class="brown-emphasis">session</span> to keep you logged in.</p> *@
+
+            <p>• Utilized <span class="brown-emphasis">C#/ASP.NET, MySQL</span>, and <span class="brown-emphasis">Entity Framework</span> to build a flashcard application to create and quiz yourself using flashcards</p>
+            <p>• Constructed a <span class="brown-emphasis">sorting algorithm </span>to shuffle cards, display cards, and ensure that cards not guessed correctly re-appear again</p>
+            <p>• With the use of <span class="brown-emphasis">multiple relationship schema</span>, users can create, share, favorite and use other users decks</p>
+            <p>• The use of <span class="brown-emphasis">login/registration with validations, BCrypt password hashing</span>, and <span class="brown-emphasis">session</span> ensures that users can create secure accounts and remain logged in</p>
+
             <br>
-            <a href="https://github.com/raul-torres/Flash-Cards-" class="form-control btn btn-outline-primary thisbtn thisbtn-brown" target="_blank">View Project Code</a>
+            <a href="https://github.com/raul-torres/Flashcards_V2" class="form-control btn btn-outline-primary thisbtn thisbtn-brown" target="_blank">View Project Code</a>
             <br>
             <br>
           </div>
@@ -411,7 +484,12 @@
             <h6>Technologies:</h6>
             <p>C# - ASP.NET Core - MySQL - Entity Framework</p>
             <br>
-            <p>Activity planner where you can create and join other user-generated events. This full-stack web application uses a <span class="blue-emphasis">many-to-many</span> as well as a <span class="blue-emphasis">one-to-many</span> schema relationship, login and registration with <span class="blue-emphasis">validation</span>, <span class="blue-emphasis">session</span> to ensure the user remains logged in, and <span class="blue-emphasis">BCrypt</span> password hashing.</p>
+            @* <p>Activity planner where you can create and join other user-generated events. This full-stack web application uses a <span class="blue-emphasis">many-to-many</span> as well as a <span class="blue-emphasis">one-to-many</span> schema relationship, login and registration with <span class="blue-emphasis">validation</span>, <span class="blue-emphasis">session</span> to ensure the user remains logged in, and <span class="blue-emphasis">BCrypt</span> password hashing.</p> *@
+
+            <p>• Full stack activity planner created during coding Bootcamp to <span class="blue-emphasis">show proficiency of C#</span></p>
+            <p>• Includes <span class="blue-emphasis">login/registration with validation, session</span> to ensure the user remains logged in, and <span class="blue-emphasis">BCrypt password hashing</span> to keep users accounts secured</p>
+            <p>• Uses <span class="blue-emphasis">many-to-many</span> as well as a <span class="blue-emphasis">one-to-many</span>  schema to build relations between the <span class="blue-emphasis">Entity Framework</span> classes</p>
+
             <a href="https://github.com/raul-torres/BlackBelt" class="form-control btn btn-outline-primary thisbtn thisbtn2" target="_blank">View Project Code</a>
             <br>
             <br>
@@ -457,7 +535,11 @@
             <h6>Technologies:</h6>
             <p>MongoDB - Express - React - NodeJS</p>
             <br>
-            <p>A single-page application where you can place pets for adoptions as well as adopt them. It uses a NoSql Database (<span class="empahsis">MongoDB</span>) with RESTful-Api (<span class="empahsis">ExpressJS</span>).</p>
+            @* <p>A single-page application where you can place pets for adoptions as well as adopt them. It uses a NoSql Database (<span class="empahsis">MongoDB</span>) with RESTful-Api (<span class="empahsis">ExpressJS</span>).</p> *@
+
+            <p>• Utilized the <span class="empahsis">MEARN</span> stack to show proficiency in React during Bootcamp and build a single-page application where you can place pets for adoptions as well as adopt them</p>
+            <p>• Used <span class="empahsis">MongoDB</span> to learn how a <span class="empahsis">non-relational database</span> works and store user/pet data</p>
+
             <br>
             <a href="https://github.com/raul-torres/MEARN-Deployment" class="form-control btn btn-outline-primary thisbtn thisbtn1" target="_blank">View Project Code</a>
             <br>
@@ -505,7 +587,12 @@
             <h6>Technologies:</h6>
             <p>Python - Django MVC - SQLite</p>
             <br>
-            <p>Travel planner built using Python where you can create travel plans with your friends! This application features login and registration with <span class="purp-emphasis">validations</span>, <span class="purp-emphasis">one-to-many</span> and <span class="purp-emphasis">many-to-many</span> schema relationships, <span class="purp-emphasis">BCrypt</span> password hashing, and <span class="purp-emphasis">session</span> to keep track of the user that is logged in.</p>
+            @* <p>Travel planner built using Python where you can create travel plans with your friends! This application features login and registration with <span class="purp-emphasis">validations</span>, <span class="purp-emphasis">one-to-many</span> and <span class="purp-emphasis">many-to-many</span> schema relationships, <span class="purp-emphasis">BCrypt</span> password hashing, and <span class="purp-emphasis">session</span> to keep track of the user that is logged in.</p> *@
+
+            <p>• Used <span class="purp-emphasis">Python, Django, and SQLite</span> to create a travel planner website</p>
+            <p>• Allows multiple registered users to coordinate travel plans and <span class="purp-emphasis">join travel itineraries via SQLite connections</span> and a user-friendly web interface</p>
+            <p>• Features <span class="purp-emphasis">registration/login validations, Bcrypt password hashing, Session</span>, and <span class="purp-emphasis">various schema relationships</span></p>
+
             <a href="https://github.com/raul-torres/hangout" class="form-control btn btn-outline-primary thisbtn thisbtn-gray" target="_blank">View Project Code</a>
             <br>
             <br>
