@@ -69,4 +69,8 @@ SOFTWARE.
 - Website - [Portfolio Website](www.rauldev.com)
 - LinkedIn - [Professional LinkedIn](https://www.linkedin.com/in/raul%E2%80%94torres/)
 
+<<<<<<< Updated upstream
 [Back To The Top](#My-Portfolio-Website)
+=======
+[Back To The Top](#My-Portfolio-Website)
+>>>>>>> Stashed changes
